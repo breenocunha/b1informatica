@@ -1,50 +1,217 @@
 <!DOCTYPE html>
-<!--
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <!--
-        Customize this policy to fit your own app's needs. For more guidance, please refer to the docs:
-            https://cordova.apache.org/docs/en/latest/
-        Some notes:
-            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
-            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
-                * Enable inline JS: add 'unsafe-inline' to default-src
-        -->
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
-        <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
-        <meta name="color-scheme" content="light dark">
-        <link rel="stylesheet" href="css/index.css">
-        <title>Hello World</title>
-    </head>
-    <body>
-        <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar (Android only) -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>Template Tab</title>
+    <!-- Path to Framework7 Library Bundle CSS -->
+    <link rel="stylesheet" href="lib/framework7-bundle.min.css">
+    <!-- CSS PERSONALIZADO PARA MENU-->
+    <link rel="stylesheet" href="css/index.css">
+    <!--Ícones Material Design-->
+    <link rel="stylesheet" href="css/materialdesignicons.min.css">
+    <!--Icones Remix Icon-->
+    <link rel="stylesheet" href="css/remixicon/remixicon.css">
+
+
+</head>
+
+<body>
+    <!-- App root element -->
+    <div id="app">
+
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+
+            <!-- TAB BAR-->
+            <div class="toolbar toolbar-bottom">
+                <div class="toolbar-inner display-flex">
+                    <a href="/index/" class="tab-link link active">
+                        <i class="ri-home-5-line"></i>
+                        <span>Home</span>
+                    </a>
+                    <a href="/link2/" class="tab-link link">
+                        <i class="ri-search-2-line"></i>
+                        <span>Pesquisar</span>
+                    </a>
+                    <a href="/link3/" class="tab-link link">
+                        <i class="ri-heart-3-line"></i>
+                        <span>Favoritos</span>
+                    </a>
+                    <a href="/link4/" class="tab-link link">
+                        <i class="ri-user-line"></i>
+                        <span>Perfil</span>
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- Initial Page, "data-name" contains page name -->
+            <div data-name="index" class="page color-theme-blue">
+
+                <!--Nav Topo-->
+                <div class="top-nav">
+                    <h1 class="title-logo"><span>B1</span> Informática</h1>
+                    <a href="#" class="btn-cart" data-count="0">
+                        <i class="ri-shopping-bag-line"></i>
+                    </a>
+                </div>
+
+                <form>
+                    <input placeholder="O que você procura?" type="text">
+                    <i class="icone-busca ri-search-2-line"></i>
+                </form>
+
+                <!-- Scrollable page content -->
+                <div class="page-content">
+                    <div class="block no-margin-top">
+                         <!-- Swiper -->
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="img/propaganda.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="img/propaganda2.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="img/propaganda3.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="img/propaganda4.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+
+                        <div class="display-flex align-items-center justify-content-space-between">
+                            <h2>Categorias</h2>
+                            <a href="#">Veja todas <i class="mdi mdi-arrow-right"></i></a>
+                        </div>
+
+                        <!-- Swiper -->
+                        <div class="swiper categorias">
+                            <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <button class="filter-btn active">Todas</button>
+                            </div>
+                            <div class="swiper-slide">
+                                <button class="filter-btn">Celulares</button>
+                            </div>
+                            <div class="swiper-slide">
+                                <button class="filter-btn">Notebooks</button>
+                            </div>
+                            <div class="swiper-slide">
+                                <button class="filter-btn">Perifericos</button>
+                            </div>
+                            <div class="swiper-slide">
+                                <button class="filter-btn">Hardwares</button>
+                            </div>
+                            <div class="swiper-slide">
+                                <button class="filter-btn">Smartwatch</button>
+                            </div>
+                            <div class="swiper-slide">
+                                <button class="filter-btn">Eletronicos</button>
+                            </div>
+                            <div class="swiper-slide">
+                                <button class="filter-btn">Miniaturas</button>
+                            </div>
+                            <div class="swiper-slide">
+                                <button class="filter-btn">Consoles</button>
+                            </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+
+                        <div id="produtos" class="margin-top row display-flex align-items-center justify-content-start">
+                            <!--Item Card-->
+                            <div class="item-card">
+                                <a href="#" class="item">
+                                    <div class="img-container">
+                                        <img src="img/airpod.png" alt="">
+                                    </div>
+                                    <div class="nome-rating">
+                                        <span class="color-gray">Apple AirPods 3ª Geração</span>
+                                        <span class="bold margin-right">
+                                            <i class="mdi mdi-star"></i>
+                                            4.8
+                                        </span>
+                                    </div>
+                                    <div class="price">R$ 1.299,00</div>
+                                </a>
+                            </div>
+
+                            <!--Item Card-->
+                            <div class="item-card">
+                                <a href="#" class="item">
+                                    <div class="img-container">
+                                        <img src="img/xbox.png" alt="">
+                                    </div>
+                                    <div class="nome-rating">
+                                        <span class="color-gray">Xbox Series X</span>
+                                        <span class="bold margin-right">
+                                            <i class="mdi mdi-star"></i>
+                                            4.8
+                                        </span>
+                                    </div>
+                                    <div class="price">R$ 4.399,00</div>
+                                </a>
+                            </div>
+
+                            <!--Item Card-->
+                            <div class="item-card">
+                                <a href="#" class="item">
+                                    <div class="img-container">
+                                        <img src="img/iphone.png" alt="">
+                                    </div>
+                                    <div class="nome-rating">
+                                        <span class="color-gray">iPhone 15 Pro Max</span>
+                                        <span class="bold margin-right">
+                                            <i class="mdi mdi-star"></i>
+                                            4.8
+                                        </span>
+                                    </div>
+                                    <div class="price">R$ 8.999,00</div>
+                                </a>
+                            </div>
+
+                            <!--Item Card-->
+                            <div class="item-card">
+                                <a href="#" class="item">
+                                    <div class="img-container">
+                                        <img src="img/macbook.png" alt="">
+                                    </div>
+                                    <div class="nome-rating">
+                                        <span class="color-gray">Apple Macbook Air M3</span>
+                                        <span class="bold margin-right">
+                                            <i class="mdi mdi-star"></i>
+                                            4.8
+                                        </span>
+                                    </div>
+                                    <div class="price">R$ 10.299,00</div>
+                                </a>
+                            </div>
+                        </div>
+                        <br><br><br><br><br><br>
+                    </div>
+                </div>
             </div>
         </div>
-        <script src="cordova.js"></script>
-        <script src="js/index.js"></script>
-    </body>
+    </div>
+    <!-- Path to Framework7 Library Bundle JS-->
+    <script type="text/javascript" src="lib/framework7-bundle.min.js"></script>
+	<!-- jQuery -->
+	<script type="text/javascript" src="lib/jquery-3.7.0.min.js"></script>	
+    <!-- Roteamento do app-->
+    <script type="text/javascript" src="js/routes.js"></script>
+    <script src="cordova.js"></script>
+</body>
+
 </html>
