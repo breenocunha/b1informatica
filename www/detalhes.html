@@ -39,8 +39,8 @@
                 <div class="toolbar toolbar-bottom">
                     <div class="toolbar-inner display-flex align-items-center justify-content-center">
                         <div class="flex-40 text-align-center">
-                            <span class="riscado color-gray">R$ 1.400,00</span>
-                            <h3 class="princing no-padding no-margin">R$ 1.200,00</h3>
+                            <span id="preco-detalhe" class="riscado color-gray">R$ 1.400,00</span>
+                            <h3 id="precopromo-detalhe" class="princing no-padding no-margin">R$ 1.200,00</h3>
                         </div>
                         <div class="flex-60">
                             <button class="add-cart">Adicionar Carrinho</button>
@@ -56,31 +56,27 @@
                             <a href="#"><i class="ri-heart-3-line"></i></a>
                             <a href="#"><i class="ri-share-2-line"></i></a>
                         </div>
-                        <img src="img/default.png" alt="">
+                        <img id="imagem-detalhe" src="img/default.png" alt="">
                     </div>
                     <div class="prod-content">
                         <div class="block">
                             <div class="line padding-top">
-                                <b>Nome do Produto</b>
+                                <b id="nome-detalhe">Nome do Produto</b>
                                 <button class="promo-btn">Promoção</button>
                             </div>
                             <div class="display-flex align-items-center justify-content-start">
-                                <button class="btn-rates"><i class="mdi mdi-star"></i> 4.8</button>
-                                <button class="btn-rates"><i class="ri-thumb-up-fill"></i> 90%</button>
-                                <span>110 reviwes</span>
+                                <button class="btn-rates"><i class="mdi mdi-star"></i><span id="rating-detalhe"> 4.8</span></button>
+                                <button class="btn-rates"><i class="ri-thumb-up-fill"></i><span id="like-detalhe"> 90%</span></button>
+                                <span id="reviews-detalhe">110 reviwes</span>
                             </div>
                             <div class="display-flex align-items-center justify-content-center">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae dolores hic quibusdam rerum aut facilis, soluta nesciunt, impedit, minima dignissimos odit. Cupiditate adipisci expedita, quibusdam mollitia nihil sint soluta velit.</p>
+                                <p id="descricao-detalhe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae dolores hic quibusdam rerum aut facilis, soluta nesciunt, impedit, minima dignissimos odit. Cupiditate adipisci expedita, quibusdam mollitia nihil sint soluta velit.</p>
                             </div>
 
-                            <table>
+                            <table id="tabdetalhes">
                                 <tr>
                                     <th>Características</th>
                                     <th>Detalhes</th>
-                                </tr>
-                                <tr>
-                                    <td>Bonito</td>
-                                    <td>Aqui vai o detalhe mais informativo</td>
                                 </tr>
                             </table>
                         </div>

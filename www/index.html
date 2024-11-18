@@ -16,6 +16,7 @@
     <!-- CSS PERSONALIZADO PARA MENU-->
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/detalhes.css">
+    <link rel="stylesheet" href="css/carrinho.css">
     <!--Ícones Material Design-->
     <link rel="stylesheet" href="css/materialdesignicons.min.css">
     <!--Icones Remix Icon-->
@@ -60,7 +61,7 @@
                 <!--Nav Topo-->
                 <div class="top-nav">
                     <h1 class="title-logo"><span>B1</span> Informática</h1>
-                    <a href="#" class="btn-cart" data-count="0">
+                    <a href="/carrinho/" class="btn-cart" data-count="0">
                         <i class="ri-shopping-bag-line"></i>
                     </a>
                 </div>
@@ -132,73 +133,82 @@
                         </div>
 
                         <div id="produtos" class="margin-top row display-flex align-items-center justify-content-start">
-                            <!--Item Card-->
+                            <!--Item Skeleton-->
                             <div class="item-card">
                                 <a href="/detalhes/" class="item">
-                                    <div class="img-container">
-                                        <img src="img/airpod.png" alt="">
+                                    <div class="img-container skeleton-effect-wave">
+
                                     </div>
                                     <div class="nome-rating">
-                                        <span class="color-gray">Apple AirPods 3ª Geração</span>
-                                        <span class="bold margin-right">
-                                            <i class="mdi mdi-star"></i>
-                                            4.8
+                                        <span style="margin-right: auto; width: 90px;" class="skeleton-block gelo skeleton-effect-wave color-gray"></span>
+                                        <span style="margin-right: 5px; width: 20px;" class="gelo skeleton-effect-wave">   
+                                        </span>
+                                        <span style="margin-right: 15px; width: 30px;" class="gelo skeleton-effect-wave">   
                                         </span>
                                     </div>
-                                    <div class="price">R$ 1.299,00</div>
+                                    <div class="price">
+                                        <span style="color: var(--gelo); margin-top: 5px; width: 60px; height: 15px;" class="gelo skeleton-effect-wave">R$ 1.299,00</span>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <!--Item Skeleton-->
+                            <div class="item-card">
+                                <a href="/detalhes/" class="item">
+                                    <div class="img-container skeleton-effect-wave">
+
+                                    </div>
+                                    <div class="nome-rating">
+                                        <span style="margin-right: auto; width: 90px;" class="skeleton-block gelo skeleton-effect-wave color-gray"></span>
+                                        <span style="margin-right: 5px; width: 20px;" class="gelo skeleton-effect-wave">   
+                                        </span>
+                                        <span style="margin-right: 15px; width: 30px;" class="gelo skeleton-effect-wave">   
+                                        </span>
+                                    </div>
+                                    <div class="price">
+                                        <span style="color: var(--gelo); margin-top: 5px; width: 60px; height: 15px;" class="gelo skeleton-effect-wave">R$ 1.299,00</span>
+                                    </div>
                                 </a>
                             </div>
 
-                            <!--Item Card-->
+                            <!--Item Skeleton-->
                             <div class="item-card">
-                                <a href="#" class="item">
-                                    <div class="img-container">
-                                        <img src="img/xbox.png" alt="">
+                                <a href="/detalhes/" class="item">
+                                    <div class="img-container skeleton-effect-wave">
+
                                     </div>
                                     <div class="nome-rating">
-                                        <span class="color-gray">Xbox Series X</span>
-                                        <span class="bold margin-right">
-                                            <i class="mdi mdi-star"></i>
-                                            4.8
+                                        <span style="margin-right: auto; width: 90px;" class="skeleton-block gelo skeleton-effect-wave color-gray"></span>
+                                        <span style="margin-right: 5px; width: 20px;" class="gelo skeleton-effect-wave">   
+                                        </span>
+                                        <span style="margin-right: 15px; width: 30px;" class="gelo skeleton-effect-wave">   
                                         </span>
                                     </div>
-                                    <div class="price">R$ 4.399,00</div>
+                                    <div class="price">
+                                        <span style="color: var(--gelo); margin-top: 5px; width: 60px; height: 15px;" class="gelo skeleton-effect-wave">R$ 1.299,00</span>
+                                    </div>
                                 </a>
                             </div>
 
-                            <!--Item Card-->
+                            <!--Item Skeleton-->
                             <div class="item-card">
-                                <a href="#" class="item">
-                                    <div class="img-container">
-                                        <img src="img/iphone.png" alt="">
-                                    </div>
-                                    <div class="nome-rating">
-                                        <span class="color-gray">iPhone 15 Pro Max</span>
-                                        <span class="bold margin-right">
-                                            <i class="mdi mdi-star"></i>
-                                            4.8
-                                        </span>
-                                    </div>
-                                    <div class="price">R$ 8.999,00</div>
-                                </a>
-                            </div>
+                                <a href="/detalhes/" class="item">
+                                    <div class="img-container skeleton-effect-wave">
 
-                            <!--Item Card-->
-                            <div class="item-card">
-                                <a href="#" class="item">
-                                    <div class="img-container">
-                                        <img src="img/macbook.png" alt="">
                                     </div>
                                     <div class="nome-rating">
-                                        <span class="color-gray">Apple Macbook Air M3</span>
-                                        <span class="bold margin-right">
-                                            <i class="mdi mdi-star"></i>
-                                            4.8
+                                        <span style="margin-right: auto; width: 90px;" class="skeleton-block gelo skeleton-effect-wave color-gray"></span>
+                                        <span style="margin-right: 5px; width: 20px;" class="gelo skeleton-effect-wave">   
+                                        </span>
+                                        <span style="margin-right: 15px; width: 30px;" class="gelo skeleton-effect-wave">   
                                         </span>
                                     </div>
-                                    <div class="price">R$ 10.299,00</div>
+                                    <div class="price">
+                                        <span style="color: var(--gelo); margin-top: 5px; width: 60px; height: 15px;" class="gelo skeleton-effect-wave">R$ 1.299,00</span>
+                                    </div>
                                 </a>
                             </div>
+                            
                         </div>
                         <br><br><br><br><br><br>
                     </div>
