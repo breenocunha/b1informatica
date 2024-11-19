@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="br.com.b1informatica" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>B1Informatica</name>
-    <description>Sample Apache Cordova App</description>
-    <author email="dev@cordova.apache.org" href="https://cordova.apache.org">
-        Apache Cordova Team
+    <name>B1 Informatica</name>
+    <description>App desenvolvido para testar minhas habilidades</description>
+    <author email="eltonestudos1@gmail.com" href="https://cordova.apache.org">
+        Breno Cunha do Time B1 Informatica
     </author>
     <content src="index.html" />
     <allow-intent href="http://*/*" />
