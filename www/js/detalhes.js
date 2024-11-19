@@ -35,7 +35,7 @@ if(item) {
     console.log('Produto não encontrado');
 }
 
-var carrinho = JSON.parse(localStorage.getItem('Carrinho')) || [];
+var carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
 
 //Adicionar ao Carrinho
 function adicionarAoCarrinho(item, quantidade) {

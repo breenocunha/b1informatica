@@ -49,7 +49,7 @@ fetch('js/backend.json')
 
 //Item dentro do Carrinho
 setTimeout(() => {
-    var carrinho = JSON.parse(localStorage.getItem('carrinho'));
+    var carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
 
     //Incremetar o indice da Sacolinha
     $('.btn-cart').attr('data-count', carrinho.length);
